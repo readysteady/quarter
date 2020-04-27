@@ -1,4 +1,4 @@
-# percentage
+# quarter
 
 Ruby gem for working with standard calendar quarters.
 
