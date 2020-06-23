@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = 'quarter'
-  s.version = '1.0.0'
+  s.version = '1.1.0'
   s.license = 'LGPL-3.0'
   s.platform = Gem::Platform::RUBY
   s.authors = ['Tim Craft']
@@ -13,6 +13,7 @@ Gem::Specification.new do |s|
   s.metadata = {
     'homepage' => 'https://github.com/readysteady/quarter',
     'source_code_uri' => 'https://github.com/readysteady/quarter',
-    'bug_tracker_uri' => 'https://github.com/readysteady/quarter/issues'
+    'bug_tracker_uri' => 'https://github.com/readysteady/quarter/issues',
+    'changelog_uri' => 'https://github.com/readysteady/quarter/blob/master/CHANGES.md'
   }
 end
