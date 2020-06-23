@@ -1,6 +1,7 @@
 require 'minitest/autorun'
 require 'minitest/global_expectations'
 require_relative '../lib/quarter'
+require_relative '../lib/quarter/yaml'
 require 'month'
 
 describe 'Quarter class' do
@@ -285,5 +286,23 @@ describe 'Quarter.now' do
 
   it 'returns the current quarter' do
     Quarter.now.must_equal(current_quarter)
+  end
+end
+
+describe 'YAML' do
+  let(:quarter) { Quarter.new(2020, 1) }
+
+  it 'dumps quarter objects' do
+    YAML.dump([quarter]).must_equal("---\n- Q1 2020\n")
+  end
+
+  it 'loads quarter objects' do
+    YAML.load("---\n- Q1 2020\n").must_equal([quarter])
+
+    YAML.load("---\n- 2020-Q1\n").must_equal([quarter])
+    YAML.load("---\n- 2020/Q1\n").must_equal([quarter])
+
+    YAML.load("---\n- Q12020\n").must_equal([quarter])
+    YAML.load("---\n- 2020Q1\n").must_equal([quarter])
   end
 end
