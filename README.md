@@ -1,5 +1,9 @@
 # quarter
 
+![Gem Version](https://badge.fury.io/rb/quarter.svg)
+![Build Status](https://github.com/readysteady/quarter/workflows/Test/badge.svg)
+
+
 Ruby gem for working with standard calendar quarters.
 
 
