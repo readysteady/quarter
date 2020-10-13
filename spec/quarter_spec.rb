@@ -306,3 +306,31 @@ describe 'YAML' do
     YAML.load("---\n- 2020Q1\n").must_equal([quarter])
   end
 end
+
+describe 'Quarter::Methods' do
+  include Quarter::Methods
+
+  describe 'Q1' do
+    it 'returns the 1st quarter' do
+      Q1(2020).must_equal(Quarter.new(2020, 1))
+    end
+  end
+
+  describe 'Q2' do
+    it 'returns the 2nd quarter' do
+      Q2(2020).must_equal(Quarter.new(2020, 2))
+    end
+  end
+
+  describe 'Q3' do
+    it 'returns the 3rd quarter' do
+      Q3(2020).must_equal(Quarter.new(2020, 3))
+    end
+  end
+
+  describe 'Q4' do
+    it 'returns the 4th quarter' do
+      Q4(2020).must_equal(Quarter.new(2020, 4))
+    end
+  end
+end

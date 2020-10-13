@@ -172,3 +172,21 @@ end
 def Quarter.now
   Quarter(Time.now)
 end
+
+module Quarter::Methods
+  def Q1(year)
+    Quarter.new(year, 1)
+  end
+
+  def Q2(year)
+    Quarter.new(year, 2)
+  end
+
+  def Q3(year)
+    Quarter.new(year, 3)
+  end
+
+  def Q4(year)
+    Quarter.new(year, 4)
+  end
+end
