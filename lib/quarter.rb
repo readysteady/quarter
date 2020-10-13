@@ -190,3 +190,36 @@ module Quarter::Methods
     Quarter.new(year, 4)
   end
 end
+
+class Quarter::Constant
+  def initialize(number)
+    @number = number
+  end
+
+  def -(other)
+    raise ArgumentError unless other.kind_of?(Integer)
+
+    Quarter.new(other, @number)
+  end
+
+  def /(other)
+    raise ArgumentError unless other.kind_of?(Integer)
+
+    Quarter.new(other, @number)
+  end
+
+  def coerce(other)
+    unless other.kind_of?(Integer)
+      raise TypeError, "#{self.class} can't be coerced with #{other.class}"
+    end
+
+    return self, other
+  end
+end
+
+module Quarter::Constants
+  Q1 = Quarter::Constant.new(1)
+  Q2 = Quarter::Constant.new(2)
+  Q3 = Quarter::Constant.new(3)
+  Q4 = Quarter::Constant.new(4)
+end

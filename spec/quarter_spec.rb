@@ -334,3 +334,41 @@ describe 'Quarter::Methods' do
     end
   end
 end
+
+describe 'Quarter::Constants' do
+  describe 'Q1' do
+    it 'returns the 1st quarter' do
+      Q1 = Quarter::Constants::Q1
+
+      (2020-Q1).must_equal(Quarter.new(2020, 1))
+      (2020/Q1).must_equal(Quarter.new(2020, 1))
+    end
+  end
+
+  describe 'Q2' do
+    it 'returns the 2nd quarter' do
+      Q2 = Quarter::Constants::Q2
+
+      (2020-Q2).must_equal(Quarter.new(2020, 2))
+      (2020/Q2).must_equal(Quarter.new(2020, 2))
+    end
+  end
+
+  describe 'Q3' do
+    it 'returns the 3rd quarter' do
+      Q3 = Quarter::Constants::Q3
+
+      (2020-Q3).must_equal(Quarter.new(2020, 3))
+      (2020/Q3).must_equal(Quarter.new(2020, 3))
+    end
+  end
+
+  describe 'Q4' do
+    it 'returns the 4th quarter' do
+      Q4 = Quarter::Constants::Q4
+
+      (2020-Q4).must_equal(Quarter.new(2020, 4))
+      (2020/Q4).must_equal(Quarter.new(2020, 4))
+    end
+  end
+end
