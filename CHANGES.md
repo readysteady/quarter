@@ -1,3 +1,9 @@
+# 1.2.0
+
+* Added Quarter::Methods module
+
+* Added Quarter::Constants module
+
 # 1.1.0
 
 * Added optional YAML integration
