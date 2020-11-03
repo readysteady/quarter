@@ -14,6 +14,6 @@ Gem::Specification.new do |s|
     'homepage' => 'https://github.com/readysteady/quarter',
     'source_code_uri' => 'https://github.com/readysteady/quarter',
     'bug_tracker_uri' => 'https://github.com/readysteady/quarter/issues',
-    'changelog_uri' => 'https://github.com/readysteady/quarter/blob/master/CHANGES.md'
+    'changelog_uri' => 'https://github.com/readysteady/quarter/blob/main/CHANGES.md'
   }
 end
