@@ -1,3 +1,9 @@
+# 1.2.1
+
+* Added CHANGES.md to gem files
+
+* Fixed outdated changelog_uri
+
 # 1.2.0
 
 * Added Quarter::Methods module
