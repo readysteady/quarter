@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.homepage = 'https://github.com/readysteady/quarter'
   s.description = 'Ruby gem for working with standard calendar quarters'
   s.summary = 'See description'
-  s.files = Dir.glob('lib/**/*.rb') + %w[LICENSE.txt README.md quarter.gemspec]
+  s.files = Dir.glob('lib/**/*.rb') + %w[CHANGES.md LICENSE.txt README.md quarter.gemspec]
   s.require_path = 'lib'
   s.metadata = {
     'homepage' => 'https://github.com/readysteady/quarter',
