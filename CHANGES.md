@@ -1,3 +1,7 @@
+# 1.3.0
+
+* Added Quarter#inspect method
+
 # 1.2.1
 
 * Added CHANGES.md to gem files
