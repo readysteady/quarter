@@ -50,6 +50,12 @@ RSpec.describe Quarter do
     end
   end
 
+  describe '#inspect' do
+    it 'returns a string containing the year and the number' do
+      expect(quarter.inspect).to eq('<Quarter: Q1 2020>')
+    end
+  end
+
   describe '#hash' do
     it 'returns the same value for instances with the same year and number' do
       expect(Quarter.new(year, number).hash).to eq(Quarter.new(year, number).hash)

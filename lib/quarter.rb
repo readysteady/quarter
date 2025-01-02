@@ -30,6 +30,10 @@ class Quarter
     "#{@year}-Q#{@number}"
   end
 
+  def inspect
+    "<Quarter: #{to_s}>"
+  end
+
   def hash
     iso8601.hash
   end
